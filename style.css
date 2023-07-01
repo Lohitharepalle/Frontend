@@ -1,0 +1,182 @@
+body {
+    background-image: url('travel.jpg');
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center;
+  }
+.left-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #f1f1f18b;
+    padding: 20px;
+    transition: 0.5s;
+  }
+  
+  .left-panel ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-panel ul li {
+    margin-bottom: 15px;
+    font-size: large;
+  }
+  
+  .left-panel ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  .left-panel ul li a:hover {
+    background-color: #ddd;
+  }
+  .left-panel ul li a.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
+  #openNav {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 1;
+  }
+  
+  .sidebar-closed .left-panel {
+    width: 0;
+  }
+  
+  .sidebar-closed .content {
+    margin-left: 0;
+    transition: 0.5s;
+  }
+.content p {
+  color: #333;
+}
+h1{
+    font-size: 45px;
+    margin-top: 60px;
+    margin-left: 40px;
+}
+
+form {
+    margin-top: 65px;
+    margin-left: 80px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: large;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .blog{
+    max-width: 50%;
+    padding: 20px;
+    position: relative;
+    width: 19em;
+    height: 23em;
+    background-size: 22em 30em;
+    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .blog *{
+    position: relative;
+    z-index: 2;
+  }
+  .blog:hover .color-overlay{
+    background:rgba(74, 100, 114, 0.8);
+  }
+  .blog:hover .info{
+    bottom: -3em;
+    opacity: 1;
+  }
+  .blog, .color-overlay{
+     border-radius: 0.7em;
+  }
+  .color-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    transition: 0.7s background;
+    background: rgba(74, 100, 114, 0.3);
+    z-index: 1;
+  }
+  
+  .title-box{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+  h3{
+     display: inline-block;
+     font-weight: 500;
+     font-size: 1.4em;
+     margin-top: 0;
+     color: white;
+  }
+  .info{
+    font-family: 'Droid Serif', serif;
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.1em;
+    padding: 0 2em;
+   
+    position: relative;
+    bottom: -4em;
+    opacity: 0;
+    background: transparent;
+    transition: opacity 0.3s, bottom 0.3s;
+    text-align: center;
+  }
+
+  .guide-info ul li{
+    text-decoration-line: none;
+  }
+ 

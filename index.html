@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Left Panel Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="left-panel" id="mySidebar">
+    <ul>
+      <li><a href="#" onclick="showContent('home')" id="homeLink" class="active">Home</a></li>
+      <li><a href="#" onclick="showContent('contact')" id="contactLink">Contact</a></li>
+      <li><a href="#" onclick="showContent('guide')" id="guideLink">Guide</a></li>
+      <li><a href="#" onclick="showContent('information')" id="informationLink">Information</a></li>
+    </ul>
+  </div>
+
+  <div class="content" id="main">
+    <div id="home">
+        <h1 style="font-size: 45px;">Let's discover the <br> World together</h1>
+      </div>      
+      <div id="contact" style="display: none;">
+        <h1>Get in touch with us <br> for any inquiries or feedback.</h1>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Your name"><br>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Your email"><br>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your message"></textarea><br>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+      
+    <div id="guide" style="display: none;">
+      <h2 style="font-size: 40px; margin-left: 40px;">Beautiful desinations and <br>Travel stories</h2>
+      <div class="blog-container">
+      <div class="blog" style="background-image: url('taj\ mahal.jpg');">
+        <div class="title-box">
+          <h3>Taj Mahal, India</h3>
+        </div>  
+        <div class="info">
+          <span>The Taj Mahal was designated as a UNESCO World Heritage Site in 1983 for being “the jewel of Muslim art in India and one of the universally admired masterpieces of the world's heritage”.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('eiffel\ tower.jpg');">
+        <div class="title-box">
+          <h3>Eiffel Tower, Paris</h3>
+        </div>  
+        <div class="info">
+          <span>
+            Its height and unique silhouette floating above the Paris landscape quickly made the Eiffel Tower one of the most popular attractions in Paris. The Tower's destiny is closely linked to that of the city of Paris, the capital of France and the Eiffel Tower's owner.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('peru.jpg');">
+        <div class="title-box">
+          <h3>Machu Picchu, Peru</h3>
+        </div>  
+        <div class="info">
+          <span>At a dizzying 2,430 meters above sea-level, the view form Machu Picchu on a clear day is breath taking. The famous ruins are surrounded by towering peaks apus, which means “sacred peaks” in Quechua and have views of the surrounding valley.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('italy.jpg');">
+        <div class="title-box">
+          <h3>Venice, Italy</h3>
+        </div>  
+        <div class="info">
+          <span>With its Venetian Gothic architecture, Renaissance and Baroque buildings, wide piazzas, and narrow canals, Venice is often described as one of the most beautiful cities in the world.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('japan.jpg');">
+        <div class="title-box">
+          <h3>Cherry Blossom Season, Japan</h3>
+        </div>  
+        <div class="info">
+          <span>
+            It symbolizes both life and death, beauty and violence. As the coming of spring promises new life, so the blooming of cherry blossoms brings a sense of vitality and vibrancy. At the same time, their short lifespan is a reminder that life is fleeting.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('canada.jpg');">
+        <div class="title-box">
+          <h3>Banff National Park, Canada</h3>
+        </div>  
+        <div class="info">
+          <span> Home to sparkling lakes, snow-capped mountains and fascinating wildlife, the area attracts visitors from around the world. Summers offer amazing outdoor activities, such as hiking and biking.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('tamilnadu.jpg');">
+        <div class="title-box">
+          <h3>Tamil Nadu, India</h3>
+        </div>  
+        <div class="info">
+          <span>Ooty is a beautiful hill station in Tamil Nadu, known for its misty mountains, tea plantations, and colonial architecture. Mahabalipuram is a coastal town in Tamil Nadu famous for its ancient rock-cut temples, stunning sculptures, and scenic beaches.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('argentina.jpg');">
+        <div class="title-box">
+          <h3>Iguazu Falls, Argentina</h3>
+        </div>  
+        <div class="info">
+          <span>Iguazu Falls in Argentina is a stunning sight of huge waterfalls surrounded by lush forests. It's a magnificent natural wonder that shows the amazing power and beauty of nature.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+    <div class="blog" style="background-image: url('egypt.jpg');">
+        <div class="title-box">
+          <h3>Great Pyramid of Giza, Egypt</h3>
+        </div>  
+        <div class="info">
+          <span>The pyramids of Giza are known for their remarkable engineering, as they were built thousands of years ago using massive limestone blocks, precise construction, and enduring mysteries surrounding their purpose and construction techniques.</span>
+      </div>
+     <div class="color-overlay"></div>
+    </div>
+</div>
+    </div>
+    
+    <div id="information" style="display: none;">        
+            
+            <div class="guide-info">
+              <h1>Features</h1>
+              <ul style="font-size: large; margin-left: 20px; margin-right: 100px;">
+                <li>Choose Guides Based on Language Preference: Our travel site provides guides who are fluent in multiple languages. You can select a guide who can communicate in your preferred language.</li><br>
+                <li>Explore Exciting Destinations: We offer travel packages to a wide range of countries and destinations. From exotic beaches to cultural landmarks, you can choose from various options.</li><br>
+                <li>Customizable Itineraries: Tailor your travel experience by customizing your itinerary. We provide flexibility in choosing activities, attractions, and accommodations based on your preferences.</li><br>
+                <li>Expert Recommendations: Our experienced travel experts provide recommendations on the best times to visit specific locations, local cuisines to try, and must-see attractions.</li><br>
+                <li>Travel Safety and Assistance: We prioritize your safety during your travels. Our guides are trained to ensure a secure and enjoyable journey. Additionally, our support team is available 24/7 to assist you.</li>
+              </ul>
+            </div>
+          </div>
+          
+        
+
+      </div>
+      
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
